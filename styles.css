@@ -1,0 +1,456 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc; /* Light grey background */
+    color: #333;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    box-shadow: none; /* Remove shadow */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    position: fixed; /* Keep navbar fixed at the top */
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.logo {
+    height: 50px; /* Adjust the height of the logo as needed */
+    filter: brightness(1.5); /* Increase brightness to 1.5 times */
+    transition: filter 0.3s; /* Smooth transition for brightness change */
+}
+
+.logo:hover {
+    filter: brightness(1.8); /* Further increase brightness on hover */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+.nav-link {
+    font-size: 1.1em;
+    color: #333; /* Darker text color for better visibility on transparent background */
+    transition: color 0.3s;
+    white-space: nowrap; /* Prevent text from breaking */
+}
+
+.nav-link:hover {
+    color: #0056b3; /* Matte blue color for hover effect */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex; /* Center content horizontally */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text */
+    padding: 20px; /* Added padding for smaller screens */
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%; /* Ensure it takes full width */
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire slide area */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 0;
+}
+
+.hero h1 {
+    font-size: 4em; /* Increased font size for company name */
+    margin-bottom: 0.5em;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta-btn {
+    background-color: #0056b3; /* Matte blue color */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #003b80; /* Darker matte blue color */
+}
+
+/* Section Common Styles */
+.section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px; /* Added padding to prevent content from being cut off */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0056b3; /* Matte blue color */
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333; /* Darker text color for better readability */
+}
+
+/* About Us Section */
+.section.about {
+    position: relative;
+    padding: 60px 20px;
+    background: rgba(240, 244, 248, 0.9); /* Light blue-grey background to add contrast */
+}
+
+.section.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Dhatriimage/map.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.1; /* Adjust opacity for a very subtle effect */
+    filter: brightness(150%); /* Increase brightness for a lighter effect */
+    z-index: 1;
+}
+
+.section.about .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Our Products Section */
+.section.products {
+    background-color: #e0f7fa; /* Light blue background */
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px; /* Ensure cards don't exceed the container width */
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #0056b3; /* Matte blue color */
+}
+
+.card p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Contact Us Section */
+.section.contact {
+    background-color: #fafafa; /* Light grey background */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: #0056b3; /* Matte blue color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #003b80; /* Darker matte blue color */
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #0056b3; /* Matte blue color */
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+}
+
+.contact-item i {
+    font-size: 2em;
+    color: #003b80; /* Darker matte blue color */
+}
+
+.contact-link {
+    color: #003b80; /* Darker matte blue color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* Brochure Section */
+.section.brochure {
+    background-color: #f0f4f8; /* Light blue-grey background */
+}
+
+.brochure-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.brochure-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px; /* Ensure cards don't exceed the container width */
+    transition: transform 0.3s;
+}
+
+.brochure-card:hover {
+    transform: translateY(-10px);
+}
+
+.brochure-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #0056b3; /* Matte blue color */
+}
+
+.brochure-card p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+.download-btn {
+    background-color: #0056b3; /* Matte blue color */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #003b80; /* Darker matte blue color */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-link {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0056b3; /* Matte blue color */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #003b80; /* Darker matte blue color */
+    transform: translateY(-5px);
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        position: static; /* Make navbar static on mobile */
+        background-color: rgba(255, 255, 255, 0.8); /* Slightly adjust transparency for better readability */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em; /* Adjust font size for mobile */
+    }
+
+    .hero h2 {
+        font-size: 1.5em; /* Adjust font size for mobile */
+    }
+
+    .hero p {
+        font-size: 1em; /* Adjust font size for mobile */
+    }
+
+    .section {
+        padding: 40px 10px; /* Adjust padding for mobile */
+    }
+
+    .container {
+        padding: 0 10px; /* Adjust padding for mobile */
+    }
+
+    .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%; /* Adjust card width for mobile */
+    }
+
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+}

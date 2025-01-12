@@ -13,6 +13,13 @@
 
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("opm-A4vTkhO2NSrf_"); // Replace with your EmailJS user ID
+        })();
+    </script>
 </head>
 <body>
 
@@ -54,22 +61,63 @@
     </div>
 </section>
 
+<!-- Our Services Section -->
+<section id="services" class="section services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="product-cards">
+            <div class="card">
+                <h3>Modification, Erection, Commissioning of all types of Dampers, diverters & valves</h3>
+                <p>We specialize in the modification, erection, and commissioning of all types of dampers, diverters, and valves to ensure optimal performance and reliability.</p>
+            </div>
+            <div class="card">
+                <h3>Plant shutdown activities & overhauling</h3>
+                <p>Our team is experienced in handling plant shutdown activities and overhauling, ensuring minimal downtime and efficient operations.</p>
+            </div>
+            <div class="card">
+                <h3>Man power supply (Skilled and Unskilled)</h3>
+                <p>We provide skilled and unskilled manpower to meet the diverse needs of your projects, ensuring you have the right team for the job.</p>
+            </div>
+            <div class="card">
+                <h3>Reverse Engineering of all types of Dampers and Butterfly valves</h3>
+                <p>Our reverse engineering services for dampers and butterfly valves help you understand and replicate existing components for improved performance.</p>
+            </div>
+            <div class="card">
+                <h3>Supply of spare parts</h3>
+                <p>We supply high-quality spare parts to keep your equipment running smoothly and efficiently, minimizing downtime and maintenance costs.</p>
+            </div>
+            <div class="card">
+                <h3>Professional design modification</h3>
+                <p>Our professional design modification services ensure that your equipment and systems are optimized for performance and efficiency.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Our Products Section -->
 <section id="products" class="section products">
     <div class="container">
         <h2>Our Products</h2>
-        <div class="product-cards">
-            <div class="card">
-                <h3>Industrial Hardware</h3>
-                <p>Built for heavy-duty performance and reliability in extreme conditions. Our industrial hardware is designed to withstand the toughest environments and deliver consistent results, ensuring your operations run smoothly.</p>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="Dhatriimage/Pneumatic Slide Gate Vlave.png" alt="Pneumatic Slide Gate Valve">
+                <div class="product-name">Pneumatic Slide Gate Valve</div>
             </div>
-            <div class="card">
-                <h3>Custom Solutions</h3>
-                <p>Tailored products to meet the unique needs of your business. Whether you need specialized components or bespoke systems, our custom solutions are crafted to your exact specifications, providing optimal performance and efficiency.</p>
+            <div class="product-item">
+                <img src="Dhatriimage/Rotary Airlock valve with Coupling Drive.png" alt="Rotary Airlock Valve with Coupling Drive">
+                <div class="product-name">Rotary Airlock Valve with Coupling Drive</div>
             </div>
-            <div class="card">
-                <h3>Commercial Components</h3>
-                <p>Affordable, high-quality components for everyday commercial applications. Our commercial components are engineered for reliability and cost-effectiveness, making them the perfect choice for your business's daily operations.</p>
+            <div class="product-item">
+                <img src="Dhatriimage/Guillotine Damper.jpg" alt="Guillotine Damper">
+                <div class="product-name">Guillotine Damper</div>
+            </div>
+            <div class="product-item">
+                <img src="Dhatriimage/Manual Operated Knofe Gate valve.png" alt="Manual Operated Knife Gate Valve">
+                <div class="product-name">Manual Operated Knife Gate Valve</div>
+            </div>
+            <div class="product-item">
+                <img src="Dhatriimage/Pneumatic Diverter valve.png" alt="Pneumatic Diverter Valve">
+                <div class="product-name">Pneumatic Diverter Valve</div>
             </div>
         </div>
     </div>
@@ -82,10 +130,10 @@
         <p>We'd love to hear from you. Please reach out for any inquiries, quotes, or further details about our products and services.</p>
         
         <!-- Contact Form -->
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+        <form id="contactForm" class="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
 
@@ -95,15 +143,15 @@
             <div class="contact-details">
                 <div class="contact-item">
                     <i class="fas fa-phone-alt"></i>
-                    <p><strong>Phone:</strong> <a href="tel:+1234567890" class="contact-link">+1 234 567 890</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+919591276085" class="contact-link">+91 9591276085</a></p>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <p><strong>Email:</strong> <a href="mailto:info@dhatri.com" class="contact-link">info@dhatri.com</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:sales@dhatriindia.com" class="contact-link">sales@dhatriindia.com</a></p>
                 </div>
                 <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dhatri" target="_blank" class="contact-link">Visit LinkedIn</a></p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><strong>Head Office:</strong> <span class="contact-link">Vidya complex 2nd floor, Capitanio road pumpwell, Mangalore, Karnataka</span></p>
                 </div>
             </div>
         </div>
@@ -127,19 +175,326 @@
     </div>
 </section>
 
-<!-- Footer -->
-<footer>
+<!-- Footer Section -->
+<footer class="footer">
     <div class="container">
-        <p>&copy; 2024 Dhatri Engineering Solutions. All rights reserved.</p>
-        <p><a href="#" class="footer-link">Privacy Policy</a> | <a href="#" class="footer-link">Terms of Use</a></p>
+        <div class="footer-logo">
+            <img src="Dhatriimage/dhathrilogo.png" alt="Dhatri Engineering Solutions Logo"> <!-- Update with the correct path to your logo file -->
+            <p><h3>Dhatri Engineering Solutions</h3></p>
+        </div>
+        <div class="footer-links">
+            <a href="#" id="terms-link">Terms of Use</a>
+            <a href="#" id="privacy-link">Privacy Policy</a>
+        </div>
+        <p>&copy; 2023 Dhatri Engineering Solutions. All rights reserved.</p>
     </div>
 </footer>
+
+<!-- Terms of Use Modal -->
+<div id="terms-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-terms">&times;</span>
+        <h2>Terms of Use</h2>
+        <p>Welcome to Dhatri Engineering Solutions. By accessing or using our website, you agree to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern Dhatri Engineering Solutions' relationship with you in relation to this website.</p>
+        <h3>Use of the Website</h3>
+        <p>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</p>
+        <h3>Intellectual Property</h3>
+        <p>This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance, and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</p>
+        <h3>Limitation of Liability</h3>
+        <p>Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services, or information available through this website meet your specific requirements.</p>
+    </div>
+</div>
+
+<!-- Privacy Policy Modal -->
+<div id="privacy-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-privacy">&times;</span>
+        <h2>Privacy Policy</h2>
+        <p>At Dhatri Engineering Solutions, we are committed to protecting your privacy. This privacy policy explains how we use any personal information we collect about you when you use this website.</p>
+        <h3>Information We Collect</h3>
+        <p>We collect information about you when you register with us or place an order for products or services. We also collect information when you voluntarily complete customer surveys, provide feedback, and participate in competitions. Website usage information is collected using cookies.</p>
+        <h3>How We Use Your Information</h3>
+        <p>We collect information about you to process your order, manage your account, and, if you agree, to email you about other products and services we think may be of interest to you.</p>
+        <h3>Access to Your Information</h3>
+        <p>You have the right to request a copy of the information that we hold about you. If you would like a copy of some or all of your personal information, please email us at sales@dhatriindia.com.</p>
+    </div>
+</div>
 
 <!-- Scroll to Top Button -->
 <button id="scrollToTopBtn" class="scroll-to-top-btn">↑</button>
 
 <!-- Link to External JavaScript -->
 <script src="scripts.js"></script> <!-- Update with the correct path to your JavaScript file -->
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const serviceID = 'service_vpnd4lc'; // Replace with your EmailJS service ID
+    const templateID = 'template_0dzktu8'; // Replace with your EmailJS template ID
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            alert('Message sent successfully!');
+        }, (err) => {
+            alert('Failed to send message. Please try again later.');
+            console.error('Failed to send message:', err);
+        });
+});
+
+// Modal functionality
+const termsLink = document.getElementById('terms-link');
+const privacyLink = document.getElementById('privacy-link');
+const termsModal = document.getElementById('terms-modal');
+const privacyModal = document.getElementById('privacy-modal');
+const closeTerms = document.getElementById('close-terms');
+const closePrivacy = document.getElementById('close-privacy');
+
+termsLink.addEventListener('click', function() {
+    termsModal.style.display = 'block';
+});
+
+privacyLink.addEventListener('click', function() {
+    privacyModal.style.display = 'block';
+});
+
+closeTerms.addEventListener('click', function() {
+    termsModal.style.display = 'none';
+});
+
+closePrivacy.addEventListener('click', function() {
+    privacyModal.style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target == termsModal) {
+        termsModal.style.display = 'none';
+    }
+    if (event.target == privacyModal) {
+        privacyModal.style.display = 'none';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the modal elements
+    var termsModal = document.getElementById('terms-modal');
+    var privacyModal = document.getElementById('privacy-modal');
+
+    // Get the link elements
+    var termsLink = document.getElementById('terms-link');
+    var privacyLink = document.getElementById('privacy-link');
+
+    // Get the <span> elements that close the modals
+    var closeTerms = document.getElementById('close-terms');
+    var closePrivacy = document.getElementById('close-privacy');
+
+    // When the user clicks the link, open the modal
+    termsLink.onclick = function() {
+        termsModal.classList.add('show');
+        termsModal.style.display = 'block';
+    }
+
+    privacyLink.onclick = function() {
+        privacyModal.classList.add('show');
+        privacyModal.style.display = 'block';
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    closeTerms.onclick = function() {
+        termsModal.classList.remove('show');
+        setTimeout(function() {
+            termsModal.style.display = 'none';
+        }, 300); // Match the transition duration
+    }
+
+    closePrivacy.onclick = function() {
+        privacyModal.classList.remove('show');
+        setTimeout(function() {
+            privacyModal.style.display = 'none';
+        }, 300); // Match the transition duration
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == termsModal) {
+            termsModal.classList.remove('show');
+            setTimeout(function() {
+                termsModal.style.display = 'none';
+            }, 300); // Match the transition duration
+        }
+        if (event.target == privacyModal) {
+            privacyModal.classList.remove('show');
+            setTimeout(function() {
+                privacyModal.style.display = 'none';
+            }, 300); // Match the transition duration
+        }
+    }
+});
+</script>
+
+<style>
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+}
+
+.product-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the entire image is visible within the container */
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover img {
+    transform: scale(1.1);
+}
+
+.product-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-item:hover .product-name {
+    opacity: 1;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.terms, .privacy {
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Maximum width for the modal */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.modal.show {
+    opacity: 1; /* Make visible */
+    transform: translateY(0); /* Reset transform */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+</style>
 
 </body>
 </html>

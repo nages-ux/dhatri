@@ -28,6 +28,7 @@
     <a href="#"><img src="Dhatriimage/dhathrilogo.png" alt="Dhatri Engineering Logo" class="logo"></a> <!-- Update with the correct path to your logo file -->
     <div class="nav-links">
         <a href="#about" class="nav-link">About Us</a>
+        <a href="#services" class="nav-link">Services</a>
         <a href="#products" class="nav-link">Products</a>
         <a href="#contact" class="nav-link">Contact Us</a>
         <a href="#brochure" class="nav-link">Brochure</a>
@@ -41,12 +42,13 @@
             <div class="slide"><img src="Dhatriimage/engineer.png" alt="Image 1"></div>
             <div class="slide"><img src="Dhatriimage/Thermalpower.png" alt="Image 2"></div>
             <div class="slide"><img src="Dhatriimage/Topimage3.png" alt="Image 3"></div>
+            <div class="slide"><img src="Dhatriimage/websiteimg4.JPG" alt="Image 3"></div>
         </div>
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
         <h1>DHATRI ENGINEERING SOLUTIONS</h1>
-        <h2>Engineering the Future with Precision</h2>
+        <h2>Industrial Equipment Supplier & Engineering services</h2>
         <a href="#contact" class="cta-btn">Get In Touch</a>
     </div>
 </section>
@@ -94,6 +96,26 @@
     </div>
 </section>
 
+<!-- Gas Tight Efficiency Section -->
+<section id="gas-tight-efficiency" class="section gas-tight-efficiency">
+    <div class="container">
+        <h2>Gas Tight Efficiency</h2>
+        
+        <ol>
+            <li>We specialize in the modification, erection, and commissioning of all types of dampers, diverters, and valves to ensure optimal performance and reliability.</li>
+            <li>Our team is experienced in handling plant shutdown activities and overhauling, ensuring minimal downtime and efficient operations.</li>
+            <li>We provide skilled and unskilled manpower to meet the diverse needs of your projects, ensuring you have the right team for the job.</li>
+            <li>Our reverse engineering services for dampers and butterfly valves help you understand and replicate existing components for improved performance.</li>
+            <li>We supply high-quality spare parts to keep your equipment running smoothly and efficiently, minimizing downtime and maintenance costs.</li>
+            <li>Our professional design modification services ensure that your equipment and systems are optimized for performance and efficiency.</li>
+        </ol>
+        <div class="graph-container">
+            <img src="Dhatriimage/gasefficurve.png" alt="Gas Tight Efficiency Graph" class="graph-image"> <!-- Update with the correct path to your graph image -->
+            <figcaption class="graph-label">Gas Tight Efficiency</figcaption>
+        </div>
+    </div>
+</section>
+
 <!-- Our Products Section -->
 <section id="products" class="section products">
     <div class="container">
@@ -102,6 +124,42 @@
             <div class="product-item">
                 <img src="Dhatriimage/Guillotine Damper.jpg" alt="Guillotine Damper">
                 <div class="product-name">Guillotine Damper</div>
+            </div>
+            <div class="product-item">
+                <img src="Dhatriimage/Guillotinespade1.png" alt="Glandular Spade Guillotine Damper">
+                <div class="product-name">Glandular Spade Guillotine Damper</div>
+            </div>
+            <div class="product-item">
+                <img src="Dhatriimage/Guillotinespade2.png" alt="Glandular Spade Guillotine Damper">
+                <div class="product-name">Glandular Spade Guillotine Damper</div>
+            </div>
+            <div class="product-item">
+                <img src="Dhatriimage/Louvredamp1.png" alt="Louvre Damper">
+                <div class="product-name">Complete built Louvre Damper</div>
+            </div>
+            <div class="product-item">
+                <img src="Dhatriimage/Louvredamp2.png" alt="Louvre Damper">
+                <div class="product-name">Single built Louvre Damper</div>
+            </div>
+            <div class="product-item">
+                <img src="Dhatriimage/Butterflydamper1.png" alt="Butterfly Damper with Metallic Seal - 1200mm">
+                <div class="product-name">Butterfly Damper with Metallic Seal - 1200mm</div>
+            </div>
+            <div class="product-item">
+                <img src="Dhatriimage/Butterflydamper2.png" alt="Butterfly Damper-1000mmx1000mm">
+                <div class="product-name">Butterfly Damper - 1000mmx1000mm</div>
+            </div>
+            <div class="product-item">
+                <img src="Dhatriimage/VIVDamper1.png" alt="Inlet Guide Vane Dampers">
+                <div class="product-name">Inlet Guide Vane Dampers</div>
+            </div>
+            <div class="product-item">
+                <img src="Dhatriimage/VIVDamper2.png" alt="Inlet Guide Vane Dampers">
+                <div class="product-name">Inlet Guide Vane Dampers</div>
+            </div>
+            <div class="product-item">
+                <img src="Dhatriimage/Motorized  Operated Inlet Guide Vane Dmaper.jpg" alt="Motorized  Operated Inlet Guide Vane Dmaper">
+                <div class="product-name">Motorized  Operated Inlet Guide Vane Dmaper</div>
             </div>
         </div>
     </div>
@@ -117,6 +175,7 @@
         <form id="contactForm" class="contact-form">
             <input type="text" id="name" name="name" placeholder="Your Name" required>
             <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number (optional)" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
             <textarea id="message" name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
@@ -210,275 +269,7 @@
 <!-- Link to External JavaScript -->
 <script src="scripts.js"></script> <!-- Update with the correct path to your JavaScript file -->
 
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
 
-    const serviceID = 'service_vpnd4lc'; // Replace with your EmailJS service ID
-    const templateID = 'template_0dzktu8'; // Replace with your EmailJS template ID
-
-    emailjs.sendForm(serviceID, templateID, this)
-        .then(() => {
-            alert('Message sent successfully!');
-        }, (err) => {
-            alert('Failed to send message. Please try again later.');
-            console.error('Failed to send message:', err);
-        });
-});
-
-// Modal functionality
-const termsLink = document.getElementById('terms-link');
-const privacyLink = document.getElementById('privacy-link');
-const termsModal = document.getElementById('terms-modal');
-const privacyModal = document.getElementById('privacy-modal');
-const closeTerms = document.getElementById('close-terms');
-const closePrivacy = document.getElementById('close-privacy');
-
-termsLink.addEventListener('click', function() {
-    termsModal.style.display = 'block';
-});
-
-privacyLink.addEventListener('click', function() {
-    privacyModal.style.display = 'block';
-});
-
-closeTerms.addEventListener('click', function() {
-    termsModal.style.display = 'none';
-});
-
-closePrivacy.addEventListener('click', function() {
-    privacyModal.style.display = 'none';
-});
-
-window.addEventListener('click', function(event) {
-    if (event.target == termsModal) {
-        termsModal.style.display = 'none';
-    }
-    if (event.target == privacyModal) {
-        privacyModal.style.display = 'none';
-    }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the modal elements
-    var termsModal = document.getElementById('terms-modal');
-    var privacyModal = document.getElementById('privacy-modal');
-
-    // Get the link elements
-    var termsLink = document.getElementById('terms-link');
-    var privacyLink = document.getElementById('privacy-link');
-
-    // Get the <span> elements that close the modals
-    var closeTerms = document.getElementById('close-terms');
-    var closePrivacy = document.getElementById('close-privacy');
-
-    // When the user clicks the link, open the modal
-    termsLink.onclick = function() {
-        termsModal.classList.add('show');
-        termsModal.style.display = 'block';
-    }
-
-    privacyLink.onclick = function() {
-        privacyModal.classList.add('show');
-        privacyModal.style.display = 'block';
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    closeTerms.onclick = function() {
-        termsModal.classList.remove('show');
-        setTimeout(function() {
-            termsModal.style.display = 'none';
-        }, 300); // Match the transition duration
-    }
-
-    closePrivacy.onclick = function() {
-        privacyModal.classList.remove('show');
-        setTimeout(function() {
-            privacyModal.style.display = 'none';
-        }, 300); // Match the transition duration
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == termsModal) {
-            termsModal.classList.remove('show');
-            setTimeout(function() {
-                termsModal.style.display = 'none';
-            }, 300); // Match the transition duration
-        }
-        if (event.target == privacyModal) {
-            privacyModal.classList.remove('show');
-            setTimeout(function() {
-                privacyModal.style.display = 'none';
-            }, 300); // Match the transition duration
-        }
-    }
-});
-</script>
-
-<style>
-.product-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.product-item {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
-    box-sizing: border-box; /* Ensure padding and border are included in width and height */
-}
-
-.product-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensure the entire image is visible within the container */
-    transition: transform 0.3s ease;
-}
-
-.product-item:hover img {
-    transform: scale(1.1);
-}
-
-.product-name {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box; /* Ensure padding is included in width */
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.product-item:hover .product-name {
-    opacity: 1;
-}
-
-.section {
-    padding: 60px 0;
-}
-
-.section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.section h3 {
-    font-size: 1.5em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.section p {
-    font-size: 1em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.terms, .privacy {
-    background-color: #f9f9f9;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.footer-logo img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-.footer-links {
-    margin-bottom: 10px;
-}
-
-.footer-links a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    opacity: 0; /* Start invisible */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px; /* Maximum width for the modal */
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: transform 0.3s ease; /* Smooth transition for transform */
-}
-
-.modal.show {
-    opacity: 1; /* Make visible */
-    transform: translateY(0); /* Reset transform */
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-</style>
 
 </body>
 </html>
